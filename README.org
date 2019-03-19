@@ -1,8 +1,6 @@
 #+TITLE: Minimal example on how to convert =python= code with =cython= to use it in C++ application
 #+AUTHOR: Xavier Garrido
 
-* Description
-
 This repository provides a minimal working example to use =python= functions within a C++ code thanks
 to =cython=. Python functions are defined in the =src/foo.pyx= file using pyrex syntax. The =cythonize=
 binary does the job to convert the =.pyx= file into a header and source code files /i.e./ a =foo.h= and
