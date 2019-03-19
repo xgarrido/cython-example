@@ -1,1 +1,20 @@
-#+TITLE: Minimal example on how to convert python code with cython to use it in C++ application
+#+TITLE: Minimal example on how to convert =python= code with =cython= to use it in C++ application
+#+AUTHOR: Xavier Garrido
+
+* Description
+
+This repository provides a minimal working example to use =python= functions within a C++ code thanks
+to =cython=. Python functions are defined in the =src/foo.pyx= file using pyrex syntax. The =cythonize=
+binary does the job to convert the =.pyx= file into a header and source code files /i.e./ a =foo.h= and
+=foo.cpp= files. The =main.cpp= file from =src= directory holds the C++ code and everything can be
+compiled /via/ the =Makefile=.
+
+* Installation & use
+
+You have to =git= clone this repository to somewhere on your disk
+#+BEGIN_SRC sh
+  $ git clone https://github.com/xgarrido/cython-example.git
+#+END_SRC
+
+Then got to the =cython-example= directory and just type =$ make=. You should get a =foo= binary file that
+you can run with =$ ./foo=
